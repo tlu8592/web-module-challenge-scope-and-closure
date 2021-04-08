@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  A closure involves a function that consist of variables and another function nested within it. The return function of the nested function is the closure.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  The closure is on line 56. The console.log line is nested within the secondary function within personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+  Whatever name that is entered as the argument of personalDice will remain the same. The newRoll variable within the temperate literal within the console.log will change, since there is math method of random.
+
 c. What is the lexical scope of `newRoll`? 
 
+  newRoll is in the function scope of the nested function within personalDice.
 
 ### Task 3 - Stretch Goals
 
